@@ -142,7 +142,7 @@ LOGIN_REDIRECT_URL = 'blog-home'
 
 LOGIN_URL = 'login'
 
-CSRF_TRUSTED_ORIGINS=['POST']
+CSRF_TRUSTED_ORIGINS=['https://web-production-7f57.up.railway.app']
 
 EMAIL_USER = str(os.getenv('EMAIL_USER'))
 EMAIL_PASS = str(os.getenv('EMAIL_PASS'))
