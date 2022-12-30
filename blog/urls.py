@@ -17,6 +17,7 @@ urlpatterns = [
     path('post/<int:pk>/update', PostUpdateView.as_view(), name='post-update'),
     path('post/<int:pk>/delete', PostDeleteView.as_view(), name='post-delete'), #templete that this expects is just a form that asks if we are sure we want to del the post, post_confirm_delete.html
     path('about/', views.about, name='blog-about'),
+    path('announce/', views.announce, name='blog-announce'),
 ]
 
 
