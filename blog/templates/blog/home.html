@@ -1,4 +1,20 @@
 {% extends "blog/base.html" %}
+{% block contentPolls %}
+<div>
+
+        {% if questions and user.is_authenticated %}
+        <ul>
+        <!-- for question in questions  -->
+            <li><a href="{% url 'polls:detail' questions.id %}">{{ questions.question_text }}</a></li>
+        <!-- endfor -->
+        </ul>
+    {% elif questions and not user.is_authenticated %}
+        <p>Sign in to vote.</p>
+            {% else %}
+            <p>No polls to display.</p>
+    {% endif %}
+      </div>
+{% endblock contentPolls %}
 {% block content %}
     {% for post in posts %}
         <article class="media content-section">
