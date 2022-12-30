@@ -9,6 +9,7 @@ from django.views.generic import (
 	DeleteView
 )
 from .models import Post
+from polls.models import Question, Choice
 
 
 def home(request):
@@ -23,6 +24,15 @@ class PostListView(ListView):
 	context_object_name = 'posts'
 	ordering = ['-date_posted']
 	paginate_by = 5
+	
+	def get_context_data(self, **kwargs):
+	#context = super(IndexView, self).get_context_data(**kwargs)
+		context = {
+			'posts': Post.objects.all(),
+			#'questions': Question.objects.all(),
+			'questions': Question.objects.last()
+		}
+		return context
 
 class UserPostListView(ListView):
 	model = Post
@@ -72,6 +82,9 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
 	return render(request, 'blog/about.html', {'title':'About'})
+
+def announce(request):
+	return render(request, 'blog/announcements.html', {'title':'Announcements'})
 
 
 
