@@ -2,7 +2,7 @@
 Blog Website with Admin Functionallities
 
 I made this application with the help of this youtube series: https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
-The link to the youtube channel of the above provided video: https://www.youtube.com/@coreyms
+
 
 My additions include hosting the database using Railway and the entire website, also using Railway.
 Also, I have followed the Django official website tutorial on creating the polls app which I also used in this website.
