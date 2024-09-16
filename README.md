@@ -1,4 +1,4 @@
-<h1 align="center"> Django-Blog-Website </h1>
+<h1 align="center"> Django Blog Website </h1>
 
 # About Django Blog Website
 I made this application with the help of this youtube series: https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
