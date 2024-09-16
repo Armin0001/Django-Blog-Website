@@ -11,7 +11,7 @@ I made this application with the help of this youtube series: https://www.youtub
 - Edit blogs etc.
 
 # ✨ My additions 
-- My additions include hosting the database using Railway and the entire website, also using Railway.
+- My additions include hosting the database using Railway and the entire website, also using Railway. *needs updates*
 - Also, I have followed the Django official website tutorial on creating the polls app which I also used in this website.
 Basically, I have linked those two together to make this application. I have provided the link to check out the website below so you can see.
 - Some functionallities I have added include allowing only the logged in users to vote and they can vote only once, and I have made some links to the home page to 
