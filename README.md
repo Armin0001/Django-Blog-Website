@@ -1,5 +1,7 @@
+<div align="center">
 <h1 align="center"> Django Blog Website </h1>
-
+<p>Blog Website with admin functionallities. Allows for auth, creating a blog post, full crud and much more! </p>
+</div>
 # ⚡ About Django Blog Website
 I made this application with the help of this youtube series: https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
 - Create Blogs
