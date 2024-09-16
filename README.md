@@ -14,6 +14,11 @@ Basically, I have linked those two together to make this application. I have pro
 - Some functionallities I have added include allowing only the logged in users to vote and they can vote only once, and I have made some links to the home page to 
 those polls. I have made it so that only the last poll published by the admin can be seen in the home page. 
 
+# 🚀 Build
+```
+python manage.py runserver
+python manage.py migrate
+```
 
 <!--
 # Conclusion
