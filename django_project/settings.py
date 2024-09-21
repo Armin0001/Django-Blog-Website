@@ -33,8 +33,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-server-production-0ad8.up.railway.app/', 'localhost']
-#ALLOWED_HOSTS = ['web-production-7f57.up.railway.app', 'localhost']
+#ALLOWED_HOSTS = ['django-server-production-0ad8.up.railway.app/', 'localhost']
+ALLOWED_HOSTS = ['web-production-7f57.up.railway.app', 'localhost']
 
 
 # Application definition
@@ -86,6 +86,7 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
 
 DATABASES = {
     'default': {
@@ -150,8 +151,8 @@ LOGIN_REDIRECT_URL = 'blog-home'
 
 LOGIN_URL = 'login'
 
-CSRF_TRUSTED_ORIGINS=['https://django-server-production-0ad8.up.railway.app/']
-#CSRF_TRUSTED_ORIGINS=['https://web-production-7f57.up.railway.app']
+#CSRF_TRUSTED_ORIGINS=['https://django-server-production-0ad8.up.railway.app/']
+CSRF_TRUSTED_ORIGINS=['https://web-production-7f57.up.railway.app']
 
 EMAIL_USER = str(os.getenv('EMAIL_USER'))
 EMAIL_PASS = str(os.getenv('EMAIL_PASS'))
