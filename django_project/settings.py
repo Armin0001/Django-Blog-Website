@@ -14,9 +14,9 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from dotenv import load_dotenv
 load_dotenv()
 import os
+import dj_database_url
 import sys
 from pathlib import Path
-
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -34,7 +34,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 #ALLOWED_HOSTS = ['django-server-production-0ad8.up.railway.app/', 'localhost']
-ALLOWED_HOSTS = ['web-production-7f57.up.railway.app', 'localhost']
+ALLOWED_HOSTS = ['web-production-7f57.up.railway.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -88,6 +88,19 @@ WSGI_APPLICATION = 'django_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 
+                #DATABASES = {
+                #    'default': {
+                #        #'ENGINE': 'django.db.backends.sqlite3',
+                #        'ENGINE': 'django.db.backends.postgresql',
+                #        'NAME': 'railway',
+                #        'USER': 'postgres',
+                #        'PASSWORD': os.environ.get('DB_PASS'),
+                #        'HOST': 'containers-us-west-123.railway.app',
+                #        'PORT': '5432',
+                #    }
+                #}
+
+
 DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
@@ -95,11 +108,16 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': os.environ.get('DB_PASS'),
-        'HOST': 'containers-us-west-123.railway.app',
-        'PORT': '5432',
+        'HOST': 'junction.proxy.rlwy.net',
+        'PORT': '56469',
     }
 }
+
+
+
 #'HOST': 'containers-us-west-123.railway.app',
+#postgres:kuliiJgn5dJzUD94pqpA@junction.proxy.rlwy.net:56469/railway
+#postgresql://postgres:kuliiJgn5dJzUD94pqpA@junction.proxy.rlwy.net:56469/railway
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
