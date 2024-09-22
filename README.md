@@ -20,9 +20,12 @@ Basically, I have linked those two together to make this application.
 those polls. I have made it so that only the last poll published by the admin can be seen in the home page. 
 
 # 🚀 Build
+
+You would maybe like to use sqlite for your local deployment, so look up sqlite database settings for django before deploying.
+You would like to modify the settings.py file, and then you can:
 ```
-python manage.py runserver
 python manage.py migrate
+python manage.py runserver
 ```
 
 # 🚀 Live Link
