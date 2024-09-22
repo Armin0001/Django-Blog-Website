@@ -22,7 +22,7 @@ those polls. I have made it so that only the last poll published by the admin ca
 # 🚀 Build
 
 You would maybe like to use sqlite for your local deployment, so look up sqlite database settings for django before deploying.
-You would like to modify the settings.py file, and then you can:
+You should modify the settings.py file, and then you can:
 ```
 python manage.py migrate
 python manage.py runserver
