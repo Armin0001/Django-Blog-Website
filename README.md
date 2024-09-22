@@ -23,10 +23,11 @@ python manage.py runserver
 python manage.py migrate
 ```
 
+# 🚀 Live Link
+You can check out the website by visiting the following link: [Django Blog Website](https://web-production-7f57.up.railway.app/)
 <!--
 # Conclusion
 Blog Website with Admin Functionallities
 This application was a very good learning experience for me.
-# 🚀 Live Link
-You can check out the website by visiting the following link: https://web-production-7f57.up.railway.app/
+
 -->
