@@ -5,13 +5,15 @@
 
 # ⚡ About Django Blog Website
 I made this application with the help of this youtube series: https://www.youtube.com/watch?v=UmljXZIypDc&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p
+
+### Key features 
 - Create blogs
 - Manage users via admin panel
 - Authentication and authorization
 - Edit blogs etc.
 
 # ✨ My additions 
-- My additions include hosting the database using Railway and the entire website, also using Railway. *needs updates*
+- My additions include hosting the database using Railway and the entire website, also using Railway.
 - Also, I have followed the Django official website tutorial on creating the polls app which I also used in this website.
 Basically, I have linked those two together to make this application. 
 - Some functionallities I have added include allowing only the logged in users to vote and they can vote only once, and I have made some links to the home page to 
